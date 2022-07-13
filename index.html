@@ -26,12 +26,14 @@
             <fieldset id="name">
                 <div>
                     <legend for="first-name">First Name</legend>
-                    <input type="text" name="first-name" id="first-name" placeholder="John" required pattern="^[A-Za-z]+$" class="validate">
+                    <input type="text" name="first-name" id="first-name" placeholder="John" 
+                    required pattern="^[A-Za-z]+$" class="validate" title="Use alphabetic letters only">
                 </div>
 
                 <div>
                     <legend for="last-name">Last Name</legend>
-                    <input type="text" name="last-name" id="last-name" placeholder="Smith" required pattern="^[A-Za-z]+$" class="validate">
+                    <input type="text" name="last-name" id="last-name" placeholder="Smith" 
+                    required pattern="^[A-Za-z]+$" class="validate" title="Use alphabetic letters only">
                 </div>
             </fieldset>
 
@@ -43,26 +45,29 @@
 
                 <div>
                     <legend for="phone">Phone Number</legend>
-                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate">
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required 
+                    pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate" title="Use only numbers in the format 123-456-7890">
                 </div>
             </fieldset>
 
             <fieldset id="passwords">
                 <div>
                     <legend for="password">Password</legend>
-                    <input type="password" name="password" id="password" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="validate">
+                    <input type="password" name="password" id="password" required placeholder="abcABC123" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" class="validate" title="Password must contain at least 6 characters, including upppercase, lowercase and numbers">
                 </div>
                 
                 <div>
                     <legend for="confirm-p">Confirm Password</legend>
-                    <input type="password" name="confirm-p" id="confirm-p" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="validate">
+                    <input type="password" name="confirm-p" id="confirm-p" required placeholder="abcABC123"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" class="validate" title="Both passwords must match exactly">
                 </div>
             </fieldset>
 
             <fieldset>
                 <div>
                     <legend for="dob">Date of Birth</legend>
-                    <input type="date" name="dob" id="dob" required>
+                    <input type="date" name="dob" id="dob" required max="2006-07-01">
                 </div>
     
                 <button type="submit">Create Account</button>
