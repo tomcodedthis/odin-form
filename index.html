@@ -10,9 +10,9 @@
 <body>
     <header>
         <div id="title-cont">
-            <h1><em>foot</em></h1>
+            <h1><em>space</em></h1>
             <div class="line"></div>
-            <h1>book</h1>
+            <h1 id="title">book</h1>
         </div>
     </header>
 
@@ -26,36 +26,36 @@
             <fieldset id="name">
                 <div>
                     <legend for="first-name">First Name</legend>
-                    <input type="text" name="first-name" id="first-name" placeholder="John" required pattern="[\D]">
+                    <input type="text" name="first-name" id="first-name" placeholder="John" required pattern="^[A-Za-z]+$" class="validate">
                 </div>
 
                 <div>
                     <legend for="last-name">Last Name</legend>
-                    <input type="text" name="last-name" id="last-name" placeholder="Smith" required pattern="[\D]">
+                    <input type="text" name="last-name" id="last-name" placeholder="Smith" required pattern="^[A-Za-z]+$" class="validate">
                 </div>
             </fieldset>
 
             <fieldset id="contact-dets">
                 <div>
                     <legend for="email">Email</legend>
-                    <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" required>                   
+                    <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" required class="validate">                   
                 </div>
 
                 <div>
                     <legend for="phone">Phone Number</legend>
-                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate">
                 </div>
             </fieldset>
 
             <fieldset id="passwords">
                 <div>
                     <legend for="password">Password</legend>
-                    <input type="password" name="password" id="password" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                    <input type="password" name="password" id="password" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="validate">
                 </div>
                 
                 <div>
                     <legend for="confirm-p">Confirm Password</legend>
-                    <input type="password" name="confirm-p" id="confirm-p" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                    <input type="password" name="confirm-p" id="confirm-p" required placeholder="Upper, Lower and Number" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="validate">
                 </div>
             </fieldset>
 
@@ -72,4 +72,5 @@
         <h3 id="log-in">Already have an account? <a href="https://www.github.com/tom-codez" target="_blank">Log In</a></h3>
     </main>
 </body>
+<script src="./script.js" type="text/javascript"></script>
 </html>
