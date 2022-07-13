@@ -5,7 +5,7 @@
     --grey: #e4e4e4;
     --blue: #30518C;
     --light-blue: #375fa5;
-    --faint: rgba(0, 0, 0, 0.03);
+    --faint: rgba(0, 0, 0, 0.1);
     font-size: 48px;
 }
 body {
@@ -15,19 +15,23 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--white);
+    background-image: url(./images/greyclouds.jpeg);
 }
 header {
     width: 40vw;
-    min-width: 400px;
-    max-width: 600px;
+    min-width: 500px;
+    max-width: 650px;
     height: 100%;
     display: flex;
-    justify-content: stretch;
-    background-image: url(./images/bluetexture.jpeg);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-image: url(./images/bluesky.jpeg);
     color: var(--white);
 }
 main {
     width: 60vw;
+    min-width: 750px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -79,6 +83,7 @@ button {
     background-color: var(--blue);
     color: var(--white);
     font-size: 0.46rem;
+    transition-duration: 500ms;
 }
 button:hover {
     background-color: var(--light-blue);
@@ -88,6 +93,12 @@ legend {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+}
+a {
+    color: var(--blue);
+}
+a:hover {
+    color: var(--light-blue);
 }
 h1 {
     font-size: 1.6rem;
@@ -104,15 +115,22 @@ h3 {
     margin: 0;
     padding: 0 40px;
 }
+p {
+    text-align: center;
+    font-size: 0.4rem;
+    color: var(--black);
+}
 #title-cont {
     margin-top: 250px;
-    background: rgba(0, 0, 0, 0.16);
+    background: rgba(0, 0, 0, 0.25);
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: right;
     width: 100%;
-    padding-right: 40px;
+}
+#title {
+    margin-right: 35px;
 }
 #info {
     background: var(--faint);
