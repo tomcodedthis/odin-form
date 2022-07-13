@@ -3,8 +3,8 @@
     --white: #f8f8f8;
     --light-grey: #f1f1f1;
     --grey: #e4e4e4;
-    --blue: #30518C;
-    --light-blue: #375fa5;
+    --blue: #51779E;
+    --light-blue: #6192C4;
     --faint: rgba(0, 0, 0, 0.1);
     font-size: 48px;
 }
@@ -76,17 +76,18 @@ input:focus {
 }
 button {
     margin-top: 25px;
-    padding: 5px;
+    padding: 2px;
     width: 200px;
     height: 50px;
-    border-radius: 10px;
-    background-color: var(--blue);
+    border: 5px solid var(--blue);
+    border-radius: 5px;
+    background-color: var(--light-blue);
     color: var(--white);
     font-size: 0.46rem;
     transition-duration: 500ms;
 }
 button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
 }
 legend {
     font-size: 0.37rem;
